@@ -172,7 +172,7 @@ public:
 */
         //////////////
         //////////////
-        assert(consensus.hashGenesisBlock == uint256S("0x00006a86bb9ea2b9f345a5983c638142b653691329f4bd3ce3bc56c55e725074"));
+        assert(consensus.hashGenesisBlock == uint256S("0xd29b9aa8c817cf671a90c441cb7f0a6d56b00f03741cabb79dbf5a2b3a4bbf35"));
         assert(genesis.hashMerkleRoot == uint256S("0xc706abce38685800c0c48374fdcc2bf8beb8a481b3f97eb8799ff8725d47fa7e"));
         vSeeds.push_back(CDNSSeedData("redencoin1", "seed1.redencoin.info"));
         vSeeds.push_back(CDNSSeedData("redencoin2", "seed2.redencoin.info"));
