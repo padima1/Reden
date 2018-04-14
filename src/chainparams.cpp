@@ -125,8 +125,8 @@ public:
         //assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
 
 	genesis = CreateGenesisBlock(1504653953, 1234561, 0x1f00ffff, 1, 50 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
-        printf("%s\n", consensus.hashGenesisBlock.ToString().c_str());
+      //  consensus.hashGenesisBlock = genesis.GetHash();
+        /*printf("%s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         //////////////
         //////////////
@@ -169,11 +169,11 @@ public:
                 std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 
 
-
+*/
         //////////////
         //////////////
-        assert(consensus.hashGenesisBlock == uint256S("a51381143c954ecdd9584989a01b37e673867a11309f592dbe6fc2ab92a160f2"));
-        assert(genesis.hashMerkleRoot == uint256S("a71192f5fff635cd240db0f34a5662de6ba73787f96d6bf29e527b2f79272737"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00006a86bb9ea2b9f345a5983c638142b653691329f4bd3ce3bc56c55e725074"));
+        assert(genesis.hashMerkleRoot == uint256S("0xc706abce38685800c0c48374fdcc2bf8beb8a481b3f97eb8799ff8725d47fa7e"));
         vSeeds.push_back(CDNSSeedData("redencoin1", "seed1.redencoin.info"));
         vSeeds.push_back(CDNSSeedData("redencoin2", "seed2.redencoin.info"));
         vSeeds.push_back(CDNSSeedData("redencoin3", "seed3.redencoin.info"));
@@ -278,8 +278,8 @@ public:
         genesis = CreateGenesisBlock(1513728000, 21635, 0x1e0ffff0, 1, 50 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000000f350d9039575f6446584f4ae4317bed76aae26ef1f2381ff73f7cd68d"));
-        assert(genesis.hashMerkleRoot == uint256S("0x33a98e8f8089165dc24358b01d52dd740011bdbffad052d51d3ac3588af2f487"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00006a86bb9ea2b9f345a5983c638142b653691329f4bd3ce3bc56c55e725074"));
+        assert(genesis.hashMerkleRoot == uint256S("0xc706abce38685800c0c48374fdcc2bf8beb8a481b3f97eb8799ff8725d47fa7e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
