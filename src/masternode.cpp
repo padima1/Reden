@@ -626,8 +626,8 @@ bool CMasternodeBroadcast::CheckOutpoint(int& nDos)
             return false;
         }
 
-        if(coins.vout[vin.prevout.n].nValue != 5000 * COIN) {
-            LogPrint("masternode", "CMasternodeBroadcast::CheckOutpoint -- Masternode UTXO should have 5000 REDEN, masternode=%s\n", vin.prevout.ToStringShort());
+        if(coins.vout[vin.prevout.n].nValue != 2500 * COIN) {
+            LogPrint("masternode", "CMasternodeBroadcast::CheckOutpoint -- Masternode UTXO should have 2500 REDEN, masternode=%s\n", vin.prevout.ToStringShort());
             return false;
         }
 
