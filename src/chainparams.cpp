@@ -128,6 +128,7 @@ public:
       consensus.hashGenesisBlock = genesis.GetHash();
         printf("%s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+        /*
         //////////////
         //////////////
                 // calculate Genesis Block
@@ -169,10 +170,10 @@ public:
                 std::cout << std::string("Finished calculating Mainnet Genesis Block:\n");
 
 
-
+*/
         //////////////
         //////////////
-        assert(consensus.hashGenesisBlock == uint256S("0x00006a86bb9ea2b9f345a5983c638142b653691329f4bd3ce3bc56c55e725074"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000053052b38c1539390e3640f73c27e7b76d977a6049a8f12d8a3ab69705a3c"));
         assert(genesis.hashMerkleRoot == uint256S("0xc706abce38685800c0c48374fdcc2bf8beb8a481b3f97eb8799ff8725d47fa7e"));
         vSeeds.push_back(CDNSSeedData("redencoin1", "seed1.redencoin.info"));
         vSeeds.push_back(CDNSSeedData("redencoin2", "seed2.redencoin.info"));
